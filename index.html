@@ -23,7 +23,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">
+                        <a href="#home" class="nav__link active-link">
                             <i class="material-icons nav__icon">home</i> Home
                         </a>
                     </li>
@@ -38,8 +38,8 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#services" class="nav__link">
-                            <i class="material-icons nav__icon">business_center</i> Services
+                        <a href="#qualification" class="nav__link">
+                            <i class="material-icons nav__icon">business_center</i> Qualification
                         </a>
                     </li>
                     <li class="nav__item">
@@ -56,6 +56,9 @@
                 <i class="material-icons nav__close" id="nav-close">close</i>
             </div>
             <div class="nav__btns" id="nav-btns">
+
+                <i class="far fa-moon change-theme" id="theme-button"></i>
+
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="material-icons">grid_view</i>
                 </div>
@@ -357,7 +360,7 @@
         </section>
 
         <!--==================== QUALIFICATION ====================-->
-        <section class="qualification section">
+        <section class="qualification section" id="qualification">
             <h2 class="section__title">Qualification</h2>
             <span class="section__subtitle">My personal journey</span>
 
@@ -468,55 +471,97 @@
                         </div>
                     </div>
 
-                    <div>
-                        <div class="contact__information">
-                            <i class="material-icons contact__icon">email</i>
 
-                            <div>
-                                <h3 class="contact__title">Email</h3>
-                                <span class="contact__subtitle">kunal.kv1dr64@gmail.com</span>
-                            </div>
-                        </div>
+                    <div class="contact__information">
+                        <i class="material-icons contact__icon">email</i>
 
                         <div>
-                            <div class="contact__information">
-                                <i class="material-icons contact__icon">place</i>
+                            <h3 class="contact__title">Email</h3>
+                            <span class="contact__subtitle">kunal.kv1dr64@gmail.com</span>
+                        </div>
+                    </div>
 
-                                <div>
-                                    <h3 class="contact__title">Location</h3>
-                                    <span class="contact__subtitle">Pune - India</span>
-                                </div>
-                            </div>
+
+                    <div class="contact__information">
+                        <i class="material-icons contact__icon">place</i>
+
+                        <div>
+                            <h3 class="contact__title">Location</h3>
+                            <span class="contact__subtitle">Pune - India</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <form action="" class="contact__form grid">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Name</label>
+                            <input type="text" class="contact__input">
                         </div>
 
-                        <form action="" class="contact__form grid">
-                            <div class="contact__inputs grid">
-                                <div class="contact__content">
-                                    <label for="" class="contact__label">Name</label>
-                                    <input type="text" class="contact__input">
-                                </div>
-
-                                <div class="contact__content">
-                                    <label for="" class="contact__label">Email</label>
-                                    <input type="email" class="contact__input">
-                                </div>
-                            </div>
-                            <div class="contact__content">
-                                <label for="" class="contact__label">Message</label>
-                                <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
-                            </div>
-
-                            <div>
-                                <a href="#" class="button button--flex">
-                                    Send Message
-                                    <i class="material-icons button__icon">send</i>
-                                </a>
-                            </div>
-
-                        </form>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Email</label>
+                            <input type="email" class="contact__input">
+                        </div>
                     </div>
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Message</label>
+                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                    </div>
+
+                    <div>
+                        <a href="#" class="button button--flex">
+                            Send Message
+                            <i class="material-icons button__icon">send</i>
+                        </a>
+                    </div>
+
+                </form>
+            </div>
         </section>
+
     </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Kunal</h1>
+                    <span class="footer__subtitle">Frontend Developer</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#about" class="footer__link">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contact Me</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="#" target="blank" class="footer__social">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" target="blank" class="footer__social">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" target="blank" class="footer__social">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; Kunal. All right reserved</p>
+        </div>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="material-icons scrollup__icon">arrow_upward</i>
+    </a>
+
 
 
 
