@@ -21,8 +21,8 @@
     --h1-font-size: 1.5rem ;
     --h2-font-size: 1.25rem ;
     --h3-font-size: 1.125rem ;
-    --normal-font-size: 0.940rem ;
-    --small-font-size: 0.820rem ;
+    --normal-font-size: 1.040rem ;
+    --small-font-size: 1rem ;
     --smaller-font-size: 0.750rem ;
 
     --font-medium: 500 ;
@@ -48,8 +48,8 @@
         --h1-font-size: 2.25rem ;
         --h2-font-size: 1.5rem ;
         --h3-font-size: 1.25rem ;
-        --normal-font-size: 1rem ;
-        --small-font-size: 0.880rem ;
+        --normal-font-size: 1.040rem ;
+        --small-font-size: 1rem ;
         --smaller-font-size: 0.815rem ;
     }
     
@@ -363,6 +363,16 @@ img{
     align-items: center;
 }
 
+.about__bg{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    min-height: 500px;
+    background: linear-gradient(134deg, rgb(106, 152, 240) 0%, rgb(73, 97, 220) 99%);
+    transform: skewY(-3deg);
+    z-index: -1;
+}
+
 .about__img {
     width: 300px;
     border-radius: 0.5rem;
@@ -372,7 +382,10 @@ img{
 
 .about__description {
     text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
     margin-bottom: var(--mb-2-5);
+    margin-top: 1rem;
 }
 
 .about__info {
@@ -405,6 +418,12 @@ img{
 
 .skills__container {
     row-gap: 0;
+}
+
+.skills__content{
+    border-radius: 0.70rem;
+    box-shadow: 0px 3px 10px rgb(0 0 0 / 0.2);
+    padding: 0.7rem;
 }
 
 .skills__header {
@@ -519,6 +538,12 @@ img{
 .qualification__icon {
     font-size: 1.8rem;
     margin-right: var(--mb-0-25);
+}
+
+.qualification__content {
+    border-radius: 0.70rem;
+    box-shadow: 0px 3px 10px rgb(0 0 0 / 0.2);
+    padding: 3rem 1.5rem;
 }
 
 .qualification__data {
