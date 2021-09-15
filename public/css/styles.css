@@ -794,9 +794,14 @@ img{
 
     .about__container,
     .skills__container,
+    .portfolio__content,
     .contact__container,
     .footer__container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .swiper-container-horizontal > .swiper-pagination-bullets {
+        bottom: -3rem;
     }
 
     .qualification__sections {
@@ -996,4 +1001,63 @@ img{
         justify-self: center;
     }
 
+}
+
+.portfolio__contanier {
+    overflow: intial;
+}
+
+.portfolio__content {
+    padding: 0 1.5rem;
+}
+
+.portfolio__img {
+    width: 265px;
+    border-radius: 0.5rem;
+    justify-self: center;
+}
+
+.portfolio__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.profolio__description {
+    margin-bottom: var(--mb-0-75);
+}
+
+.portfolio__button:hover .button__icon {
+    transform: translateX(0.25rem);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    content: '';
+}
+
+.arrow {
+    font-size: 2rem;
+    color: var(--first-color);
+}
+
+.swiper-button-prev{
+    left: -0.5rem;
+}
+
+.swiper-button-next{
+    right: -0.5rem;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: -2.5rem;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--first-color);
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet {
+    outline: none;
 }
