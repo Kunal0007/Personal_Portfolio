@@ -331,7 +331,7 @@ img{
 
 .home__blob {
     fill: var(--first-color);
-    width: 355px;
+    width: 335px;
 }
 
 .home__blob-img {
@@ -992,7 +992,7 @@ img{
     
 
     .home__blob {
-        width: 351px;
+        width: 381px;
     }
 
     .home__social {
@@ -1025,7 +1025,7 @@ img{
     }
 
     .home__blob {
-        width: 450px;
+        width: 550px;
     }    
     
     .home__container {
