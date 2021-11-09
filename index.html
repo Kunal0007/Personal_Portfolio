@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./public/css/styles.css">
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    
+
 
     <title>Kunal Patil</title>
 </head>
@@ -60,7 +60,14 @@
                 </ul>
                 <i class="material-icons nav__close" id="nav-close">close</i>
             </div>
-            <div>
+            <div class="mobile__nav" style="
+            display: flex;
+            align-items: center;
+            column-gap: 20px;
+        ">
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="material-icons">grid_view</i>
+                </div>
                 <input type="checkbox" class="checkbox" id="chk" />
                 <label class="label" for="chk">
                     <i class="fas fa-moon" id="theme-button"></i>
@@ -140,8 +147,9 @@
                             </g>
                         </svg> -->
 
-                        <lottie-player class="home__blob" src="https://assets1.lottiefiles.com/packages/lf20_kkflmtur.json" background="transparent" speed="1"
-                             loop autoplay></lottie-player>
+                        <lottie-player class="home__blob"
+                            src="https://assets1.lottiefiles.com/packages/lf20_kkflmtur.json" background="transparent"
+                            speed="1" loop autoplay></lottie-player>
                     </div>
 
                     <div class="home__data">
@@ -603,7 +611,7 @@
             <div class="footer__container container grid">
                 <div>
                     <h1 class="footer__title">Kunal</h1>
-                    <span class="footer__subtitle">Frontend Developer</span>
+                    <span class="footer__subtitle">Full Stack Developer</span>
                 </div>
 
                 <ul class="footer__links">
@@ -634,7 +642,7 @@
                 </div>
             </div>
 
-            <p class="footer__copy">&#169; Kunal. Made with ❤ from India</p>
+            <p class="footer__copy">&#169; Kunal. Made with ❤️ from India</p>
         </div>
     </footer>
 
