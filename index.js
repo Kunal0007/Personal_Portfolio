@@ -43,9 +43,9 @@ function toggleSkills() {
 
 }
 
-skillHeader.forEach(element => {
-    element.addEventListener('click', toggleSkills);
-})
+// skillHeader.forEach(element => {
+//     element.addEventListener('click', toggleSkills);
+// })
 
 
 // const tabs = document.querySelectorAll('[data-target]');
