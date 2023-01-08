@@ -413,17 +413,21 @@ img{
     position: absolute;
     left: 0px;
     width: 100%;
-    min-height: 500px;
+    min-height: 330px;
     background: linear-gradient(134deg, rgb(106, 152, 240) 0%, rgb(73, 97, 220) 99%);
     transform: skewY(-3deg);
     z-index: -1;
 }
 
+.about__imgd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .about__img {
     width: 300px;
-    border-radius: 0.5rem;
-    justify-self: center;
-    align-self: center;
+    border-radius: 0.5rem;    
 }
 
 .about__description {
@@ -954,6 +958,7 @@ img{
     }
 
     .about__container {
+        align-items: center;
         column-gap: 5rem;
     }
 
@@ -1032,6 +1037,10 @@ img{
 
     .contact__inputs {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about__bg{
+        height: 400px;
     }
 }
 
