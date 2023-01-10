@@ -1,6 +1,6 @@
 # Personal_Portfolio
 
-# https://kunal0007.github.io/Personal_Portfolio
+# https://kunal0007.netlify.app/
 
 # About Me
 Passionate Frontend Developer with two years of experience in developing websites. Proficient in technologies, such as
