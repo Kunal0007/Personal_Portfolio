@@ -1,5 +1,10 @@
 console.log("Hello");
 
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true,    
+});
+
 const navMenu = document.getElementById('nav-menu');
 const navToggle = document.getElementById('nav-toggle');
 const navClose = document.getElementById('nav-close');
@@ -20,8 +25,8 @@ const navLink = document.querySelectorAll('.nav__link');
 
 function linkClick() {
     const navMenu = document.getElementById('nav-menu');
-
     navMenu.classList.remove('show-menu');
+    console.log("Hello");
 }
 
 navLink.forEach(n => n.addEventListener('click', linkClick))
@@ -30,18 +35,18 @@ const skillContent = document.getElementsByClassName('skills__content');
 const skillHeader = document.querySelectorAll('.skills__header');
 
 
-function toggleSkills() {
-    let itemClass = this.parentNode.className;
+// function toggleSkills() {
+//     let itemClass = this.parentNode.className;
 
-    for (let i = 0; i < skillContent.length; i++) {
-        skillContent[i].className = 'skills__content skills__close';
-    }
+//     for (let i = 0; i < skillContent.length; i++) {
+//         skillContent[i].className = 'skills__content skills__close';
+//     }
 
-    if (itemClass === 'skills__content skills__close') {
-        this.parentNode.className = 'skills__content skills__open';
-    }
+//     if (itemClass === 'skills__content skills__close') {
+//         this.parentNode.className = 'skills__content skills__open';
+//     }
 
-}
+// }
 
 // skillHeader.forEach(element => {
 //     element.addEventListener('click', toggleSkills);
@@ -57,24 +62,24 @@ function toggleSkills() {
 
 
 
-const sections = document.querySelectorAll('section[id]')
+// const sections = document.querySelectorAll('section[id]')
 
-function scrollActive() {
-    const scrollY = window.pageYOffset
+// function scrollActive() {
+//     const scrollY = window.pageYOffset
 
-    sections.forEach(current => {
-        const sectionHeight = current.offsetHeight
-        const sectionTop = current.offsetTop - 50;
-        sectionId = current.getAttribute('id')
+//     sections.forEach(current => {
+//         const sectionHeight = current.offsetHeight
+//         const sectionTop = current.offsetTop - 50;
+//         sectionId = current.getAttribute('id')
 
-        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
-        } else {
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
-        }
-    })
-}
-window.addEventListener('scroll', scrollActive)
+//         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+//             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+//         } else {
+//             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+//         }
+//     })
+// }
+// window.addEventListener('scroll', scrollActive)
 
 
 function scrollHeader() {
@@ -85,12 +90,12 @@ function scrollHeader() {
 window.addEventListener('scroll', scrollHeader)
 
 
-function scrollUp() {
-    const scrollUp = document.getElementById('scroll-up');
-    // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
-    if (this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
-}
-window.addEventListener('scroll', scrollUp)
+// function scrollUp() {
+//     const scrollUp = document.getElementById('scroll-up');
+//     // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+//     if (this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+// }
+// window.addEventListener('scroll', scrollUp)
 
 
 

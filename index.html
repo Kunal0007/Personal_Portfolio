@@ -12,15 +12,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="./public/css/locomotive-scroll.css">
     <link rel="stylesheet" href="./public/css/styles.css">
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    
+
 
     <title>Kunal Patil</title>
 </head>
 
-<body>
+<body data-scroll-container>
     <header class="header" id="header">
         <nav class="container nav">
             <a href="#" class="nav__logo">Kunal</a>
@@ -28,33 +30,33 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">
+                        <a href="#home" class="nav__link active-link" data-scroll-to>
                             <i class="material-icons nav__icon">home</i> Home
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#about" class="nav__link">
+                        <a href="#about" class="nav__link" data-scroll-to>
                             <i class="material-icons nav__icon">person</i> About
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#skills" class="nav__link">
+                        <a href="#skills" class="nav__link" data-scroll-to>
                             <i class="material-icons nav__icon">description</i> Skills
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#qualification" class="nav__link">
+                        <a href="#qualification" class="nav__link" data-scroll-to>
                             <i class="material-icons nav__icon">business_center</i> Qualification
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#portfolio" class="nav__link">
+                        <a href="#portfolio" class="nav__link" data-scroll-to>
                             <i class="material-icons nav__icon">wallpaper</i> Protfolio
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#contact" class="nav__link">
-                            <i class="material-icons nav__icon">send</i> Contactme
+                        <a href="#contact" class="nav__link" data-scroll-to>
+                            <i class="material-icons nav__icon">send</i> Contact
                         </a>
                     </li>
                 </ul>
@@ -88,27 +90,28 @@
         </nav>
     </header>
     <main class="main">
-        <!--==================== HOME ====================-->
-        <section class="home section" id="home">
-            <div class="home__container container grid">
-                <div class="home__content grid">
-                    <div class="home__social">
-                        <a href="https://www.linkedin.com/in/kunal-patil-61136521b" target="_blank"
-                            class="home__social-icon">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
+        <div>
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home" data-scroll-section data-scroll-target="#home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/kunal-patil-61136521b" target="_blank"
+                                class="home__social-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
 
-                        <a href="https://github.com/Kunal0007" target="_blank" class="home__social-icon">
-                            <i class="fab fa-github"></i>
-                        </a>
+                            <a href="https://github.com/Kunal0007" target="_blank" class="home__social-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
 
-                        <a href="mailto: kunal.kv1dr64@gmail.com" target="_blank" class="home__social-icon">
-                            <i class="far fa-envelope"></i>
-                        </a>
-                    </div>
+                            <a href="mailto: kunal.kv1dr64@gmail.com" target="_blank" class="home__social-icon">
+                                <i class="far fa-envelope"></i>
+                            </a>
+                        </div>
 
-                    <div class="home__img">
-                        <!-- <svg class="home__blob" viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <div class="home__img">
+                            <!-- <svg class="home__blob" viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                             <mask id="mask0" mask-type="alpha">
                                 <path d="
                                         M 0, 70
@@ -147,54 +150,54 @@
                             </g>
                         </svg> -->
 
-                        <lottie-player class="home__blob"
-                            src="https://assets1.lottiefiles.com/packages/lf20_kkflmtur.json" background="transparent"
-                            speed="1" loop autoplay></lottie-player>
+                            <lottie-player class="home__blob"
+                                src="https://assets1.lottiefiles.com/packages/lf20_kkflmtur.json"
+                                background="transparent" speed="1" loop autoplay></lottie-player>
+                        </div>
+
+                        <div class="home__data">
+                            <h1 class="home__title">Hi, I'am Kunal</h1>
+                            <h3 class="home__subtitle">Full Stack Developer | Open Source Contributor</h3>
+                            <p class="home__description"></p>
+                            <a href="#contact" class="button button-flex" style="margin-right: 10px;">
+                                Contact Me <i class="material-icons nav__icon button__icon">send</i>
+                            </a>
+                            <a href="./public/Resume/Kunal_Patil Frontend.pdf" class="button button-flex">
+                                MY RESUME <i class="material-icons nav__icon button__icon">send</i>
+                            </a>
+                        </div>
                     </div>
 
-                    <div class="home__data">
-                        <h1 class="home__title">Hi, I'am Kunal</h1>
-                        <h3 class="home__subtitle">Full Stack Developer | Open Source Contributor</h3>
-                        <p class="home__description"></p>
-                        <a href="#contact" class="button button-flex" style="margin-right: 10px;">
-                            Contact Me <i class="material-icons nav__icon button__icon">send</i>
-                        </a>
-                        <a href="./public/Resume/Kunal_Patil Frontend.pdf" class="button button-flex">
-                            MY RESUME <i class="material-icons nav__icon button__icon">send</i>
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-button button-flex">
+                            <i class="material-icons home__scroll-mouse">mouse</i>
+                            <span class="home__scroll-name">Scroll down</span>
+                            <i class="material-icons home__scroll-arrow">arrow_downward</i>
                         </a>
                     </div>
                 </div>
+            </section>
 
-                <div class="home__scroll">
-                    <a href="#about" class="home__scroll-button button-flex">
-                        <i class="material-icons home__scroll-mouse">mouse</i>
-                        <span class="home__scroll-name">Scroll down</span>
-                        <i class="material-icons home__scroll-arrow">arrow_downward</i>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!--==================== ABOUT ====================-->
-        <section class="about section" id="about">
-            <h2 class="section__title">About Me</h2>
-            <span class="section__subtitle">My Introduction</span>
-            <div class="about__bg"></div>
-            <div class="about__container container grid">
-                <div class="about__imgd">
-                    <img src="./public/images/IMG_20220719_124702_111.jpg" alt="" class="about__img">
-                </div>
-                <div class="about__data">
-                    <p class="about__description">I am Kunal Patil currently pursuing a BTech degree in CS at
-                        PCCOE-Pimpri Chinchwad College Of Engineering, Pune. A Frontend Developer and an Open Source
-                        Ethuasiast.
-                    </p>
-                    <!-- <h2 align="center" color="#fff">My Github Status</h2> -->
-                    <!-- <img align="center" width="120"
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about" data-scroll-section data-scroll-target="#about">
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle">My Introduction</span>
+                <div class="about__bg"></div>
+                <div class="about__container container grid">
+                    <div class="about__imgd">
+                        <img src="./public/images/IMG_20220719_124702_111.jpg" alt="" class="about__img">
+                    </div>
+                    <div class="about__data">
+                        <p class="about__description">I am Kunal Patil currently pursuing a BTech degree in CS at
+                            PCCOE-Pimpri Chinchwad College Of Engineering, Pune. A Frontend Developer and an Open Source
+                            Ethuasiast.
+                        </p>
+                        <!-- <h2 align="center" color="#fff">My Github Status</h2> -->
+                        <!-- <img align="center" width="120"
                         src="https://github-readme-stats.vercel.app/api?username=kunal0007&show_icons=true"
                         alt="Stats" /> -->
 
-                    <!-- <div class="about__info">
+                        <!-- <div class="about__info">
                         <div>
                             <span class="about__info-title">GO</span>
                             <span class="about__info-name">Corona <br> Go</span>
@@ -210,243 +213,243 @@
                             <span class="about__info-name">Corona <br> Go</span>
                         </div>
                     </div> -->
-                    <!-- <div class="about__buttons">
+                        <!-- <div class="about__buttons">
                         <a href="" class="button button-flex">
                             Download <i class="material-icons button__icon">download</i>
                         </a>
                     </div> -->
-                </div>
-            </div>
-        </section>
-
-        <!--==================== SKILLS ====================-->
-        <section class="skills section" id="skills">
-            <lottie-player class="skills_blob" src="https://assets1.lottiefiles.com/packages/lf20_kkflmtur.json"
-                background="transparent" speed="1" loop autoplay></lottie-player>
-            <h2 class="section__title">Skills</h2>
-            <span class="section__subtitle">My technical level</span>
-            <div class="skills__container container grid">
-                <div>
-                    <div class="skills__content skills__open">
-                        <div class="skills__header">
-                            <i class="material-icons skills__icon">{}</i>
-
-                            <div>
-                                <h1 class="skills__title">Frontend Development</h1>
-                                <span class="skill__subtitle">Intermediate</span>
-                            </div>
-
-                        </div>
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">React.js</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__precentage skills__html" style="width: 90%;"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">JavaScript</h3>
-                                    <span class="skills__number">85%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__precentage skills__css" style="width: 85%;"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">CSS</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__precentage skills__js" style="width: 90%;"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">HTML</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__precentage skills__react" style="width: 90%;"></span>
-                                </div>
-                            </div>
-
-                        </div>
                     </div>
                 </div>
-                <div>
-                    <div class="skills__content skills__open">
-                        <div class="skills__header">
-                            <i class="material-icons skills__icon">{}</i>
+            </section>
 
-                            <div>
-                                <h1 class="skills__title">Programming Languages</h1>
-                                <span class="skill__subtitle">Intermediate</span>
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills" data-scroll-section data-scroll-target="#skills">
+                <!-- <lottie-player class="skills_blob" src="https://assets1.lottiefiles.com/packages/lf20_kkflmtur.json"
+                background="transparent" speed="1" loop autoplay></lottie-player> -->
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">My technical level</span>
+                <div class="skills__container container grid">
+                    <div>
+                        <div class="skills__content skills__open">
+                            <div class="skills__header">
+                                <i class="material-icons skills__icon">{}</i>
+
+                                <div>
+                                    <h1 class="skills__title">Frontend Development</h1>
+                                    <span class="skill__subtitle">Intermediate</span>
+                                </div>
+
                             </div>
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">React.js</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__precentage skills__html" style="width: 90%;"></span>
+                                    </div>
+                                </div>
 
-                        </div>
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Java</h3>
-                                    <span class="skills__number">90%</span>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">JavaScript</h3>
+                                        <span class="skills__number">85%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__precentage skills__css" style="width: 85%;"></span>
+                                    </div>
                                 </div>
-                                <div class="skills__bar">
-                                    <span class="skills__precentage skills__html" style="width: 90%;"></span>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">CSS</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__precentage skills__js" style="width: 90%;"></span>
+                                    </div>
                                 </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__precentage skills__react" style="width: 90%;"></span>
+                                    </div>
+                                </div>
+
                             </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">C++</h3>
-                                    <span class="skills__number">80%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__precentage skills__css" style="width: 80%;"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">C</h3>
-                                    <span class="skills__number">75%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__precentage skills__js" style="width: 75%;"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Python</h3>
-                                    <span class="skills__number">75%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__precentage skills__react" style="width: 75%;"></span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="skills__content skills__open">
-                        <div class="skills__header">
-                            <i class="material-icons skills__icon">{}</i>
-
-                            <div>
-                                <h1 class="skills__title">Backend Development</h1>
-                                <span class="skill__subtitle">Intermediate</span>
-                            </div>
-
-                        </div>
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Node.js</h3>
-                                    <span class="skills__number">85%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__precentage skills__html" style="width: 85%;"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">MySQL</h3>
-                                    <span class="skills__number">80%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__precentage skills__css" style="width: 80%;"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">MongoDB</h3>
-                                    <span class="skills__number">75%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__precentage skills__js" style="width: 75%;"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Firebase</h3>
-                                    <span class="skills__number">60%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__precentage skills__react" style="width: 60%;"></span>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
-                </div>
-                <div>
-                    <div class="skills__content skills__open">
-                        <div class="skills__header">
-                            <i class="material-icons skills__icon">{}</i>
+                    <div>
+                        <div class="skills__content skills__open">
+                            <div class="skills__header">
+                                <i class="material-icons skills__icon">{}</i>
 
-                            <div>
-                                <h1 class="skills__title">DevOps & Tools</h1>
-                                <span class="skill__subtitle">Intermediate</span>
+                                <div>
+                                    <h1 class="skills__title">Programming Languages</h1>
+                                    <span class="skill__subtitle">Intermediate</span>
+                                </div>
+
                             </div>
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Java</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__precentage skills__html" style="width: 90%;"></span>
+                                    </div>
+                                </div>
 
-                        </div>
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Git</h3>
-                                    <span class="skills__number">95%</span>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">C++</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__precentage skills__css" style="width: 80%;"></span>
+                                    </div>
                                 </div>
-                                <div class="skills__bar">
-                                    <span class="skills__precentage skills__html" style="width: 95%;"></span>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">C</h3>
+                                        <span class="skills__number">75%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__precentage skills__js" style="width: 75%;"></span>
+                                    </div>
                                 </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Python</h3>
+                                        <span class="skills__number">75%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__precentage skills__react" style="width: 75%;"></span>
+                                    </div>
+                                </div>
+
                             </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Tailwind CSS</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__precentage skills__css" style="width: 90%;"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Bootstarp</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__precentage skills__js" style="width: 90%;"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Fimga</h3>
-                                    <span class="skills__number">60%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__precentage skills__react" style="width: 60%;"></span>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
-                </div>
-                <!-- <div>
+                    <div>
+                        <div class="skills__content skills__open">
+                            <div class="skills__header">
+                                <i class="material-icons skills__icon">{}</i>
+
+                                <div>
+                                    <h1 class="skills__title">Backend Development</h1>
+                                    <span class="skill__subtitle">Intermediate</span>
+                                </div>
+
+                            </div>
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Node.js</h3>
+                                        <span class="skills__number">85%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__precentage skills__html" style="width: 85%;"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">MySQL</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__precentage skills__css" style="width: 80%;"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">MongoDB</h3>
+                                        <span class="skills__number">75%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__precentage skills__js" style="width: 75%;"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Firebase</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__precentage skills__react" style="width: 60%;"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="skills__content skills__open">
+                            <div class="skills__header">
+                                <i class="material-icons skills__icon">{}</i>
+
+                                <div>
+                                    <h1 class="skills__title">DevOps & Tools</h1>
+                                    <span class="skill__subtitle">Intermediate</span>
+                                </div>
+
+                            </div>
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Git</h3>
+                                        <span class="skills__number">95%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__precentage skills__html" style="width: 95%;"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Tailwind CSS</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__precentage skills__css" style="width: 90%;"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Bootstarp</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__precentage skills__js" style="width: 90%;"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Fimga</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__precentage skills__react" style="width: 60%;"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div>
                     <div class="skills__content skills__close">
                         <div class="skills__header">
                             <i class="material-icons skills__icon">{}</i>
@@ -501,215 +504,219 @@
                         </div>
                     </div>
                 </div> -->
-            </div>
-        </section>
+                </div>
+            </section>
 
-        <!--==================== QUALIFICATION ====================-->
-        <section class="qualification section" id="qualification">
-            <h2 class="section__title">Qualification</h2>
-            <span class="section__subtitle">My personal journey</span>
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section" id="qualification" data-scroll-section data-scroll-target="#qualification">
+                <h2 class="section__title">Qualification</h2>
+                <span class="section__subtitle">My personal journey</span>
 
-            <div class="qualification__container container">
-                <div class="qualification__tabs">
-                    <div class="qualification__button button--flex">
-                        <i class="material-icons qualification__icon">school</i>
-                        Education
+                <div class="qualification__container container">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex">
+                            <i class="material-icons qualification__icon">school</i>
+                            Education
+                        </div>
+                    </div>
+
+                    <div class="qualification__sections">
+                        <div class="qualification__content qualification__active" data-content id="education">
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">10th Boards | CBSE</h3>
+                                    <span class="qualification__subtitle">Kendriya Vidyalaya No. 1, Dehu Road,
+                                        Pune</span>
+                                    <div class="qualification__calender">
+                                        <i class="material-icons">calendar_today</i>
+                                        2018
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">12th Boards | CBSE | PCM</h3>
+                                    <span class="qualification__subtitle">Kendriya Vidyalaya No. 1, Dehu Road,
+                                        Pune</span>
+                                    <div class="qualification__calender">
+                                        <i class="material-icons">calendar_today</i>
+                                        2020
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Computer Science Enginner</h3>
+                                    <span class="qualification__subtitle">PCCOE - Pimpri Chinchwad College Of
+                                        Engineering</span>
+                                    <div class="qualification__calender">
+                                        <i class="material-icons">calendar_today</i>
+                                        2020 - Present
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="qualification__sections">
-                    <div class="qualification__content qualification__active" data-content id="education">
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">10th Boards | CBSE</h3>
-                                <span class="qualification__subtitle">Kendriya Vidyalaya No. 1, Dehu Road, Pune</span>
-                                <div class="qualification__calender">
-                                    <i class="material-icons">calendar_today</i>
-                                    2018
-                                </div>
-                            </div>
+            </section>
 
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-
-                        <div class="qualification__data">
-                            <div></div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__title">12th Boards | CBSE | PCM</h3>
-                                <span class="qualification__subtitle">Kendriya Vidyalaya No. 1, Dehu Road, Pune</span>
-                                <div class="qualification__calender">
-                                    <i class="material-icons">calendar_today</i>
-                                    2020
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Computer Science Enginner</h3>
-                                <span class="qualification__subtitle">PCCOE - Pimpri Chinchwad College Of
-                                    Engineering</span>
-                                <div class="qualification__calender">
-                                    <i class="material-icons">calendar_today</i>
-                                    2020 - Present
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <!--==================== SERVICES ====================-->
-        <!-- <section class="services section" id="services">  
+            <!--==================== SERVICES ====================-->
+            <!-- <section class="services section" id="services">  
         </section> -->
 
-        <!--==================== PORTFOLIO ====================-->
-        <section class="portfolio section" id="portfolio">
-            <h2 class="section__title">Portfolio</h2>
-            <span class="section__subtitle">Most recent work</span>
-            <div class="portfolio__contanier container swiper mySwiper">
-                <div class="swiper-wrapper">
+            <!--==================== PORTFOLIO ====================-->
+            <section class="portfolio section" id="portfolio" data-scroll-section data-scroll-target="#portfolio">
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">Most recent work</span>
+                <div class="portfolio__contanier container swiper mySwiper">
+                    <div class="swiper-wrapper">
 
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="./public/images/NextShop.jpg" alt="" class="portfolio__img">
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">NextShop NextJs</h3>
-                            <p class="portfolio__description">A E-commerence website built with NextJs
-                                Project was made using NextJs-SSR, React, and MongoDB.
-                                Also used TailwindCSS for styling.
-                            </p>
-                            <a href="https://next-shop-bay.vercel.app/"
-                                class="button button--flex button--small portfolio__button">
-                                Demo <i class="material-icons button__icon">arrow_forward</i>
-                            </a>
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="./public/images/NextShop.jpg" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">NextShop NextJs</h3>
+                                <p class="portfolio__description">A E-commerence website built with NextJs
+                                    Project was made using NextJs-SSR, React, and MongoDB.
+                                    Also used TailwindCSS for styling.
+                                </p>
+                                <a href="https://next-shop-bay.vercel.app/"
+                                    class="button button--flex button--small portfolio__button">
+                                    Demo <i class="material-icons button__icon">arrow_forward</i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="./public/images/React_website.JPG" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">React Website</h3>
+                                <p class="portfolio__description">A SHOPPING CART containing products menu and feature
+                                    of
+                                    add items to cart.
+                                    Project was made using ReactJs- Hooks &Components,
+                                    RestAPIs , Html and Css.
+                                </p>
+                                <a href="https://react-shopping-web.herokuapp.com"
+                                    class="button button--flex button--small portfolio__button">
+                                    Demo <i class="material-icons button__icon">arrow_forward</i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="./public/images/Realtime_Chatapp.JPG" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Realtime Chat App</h3>
+                                <p class="portfolio__description">A NODEJS project which provides realtime chat
+                                    interface
+                                    using express-Nodejs and Socket.io.
+                                    Project was made using Nodejs, Javascript , Html and Css
+                                </p>
+                                <a href="https://realtime-chat-apt.herokuapp.com"
+                                    class="button button--flex button--small portfolio__button">
+                                    Demo <i class="material-icons button__icon">arrow_forward</i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="./public/images/ReactNative-TodoApp.JPG" alt="" class="portfolio__img"
+                                style="width: fit-content; height: 256px;">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">React Native TO DO's App </h3>
+                                <p class="portfolio__description">React Native Todo App is a mobile application which
+                                    provides user to add, delete, and mark tasks as completed.
+                                    Project was made using React Native, Javascript , Html and Css.
+                                </p>
+                                <a href="https://github.com/Kunal0007/React-Native-App-MyTodos"
+                                    class="button button--flex button--small portfolio__button">
+                                    Demo <i class="material-icons button__icon">arrow_forward</i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="./public/images/Authentication App.JPG" alt="" class="portfolio__img"
+                                style="width: fit-content; height: 256px;">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Authentication App</h3>
+                                <p class="portfolio__description">Authentication App is a mobile application which
+                                    provides user to register, login, and logout.
+                                    Project was made using React Native, Javascript , Html and Css.
+                                </p>
+                                <a href="https://github.com/Kunal0007/Authentication-ReactNative"
+                                    class="button button--flex button--small portfolio__button">
+                                    Demo <i class="material-icons button__icon">arrow_forward</i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="./public/images/DrumKit.JPG" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Drumkit Website</h3>
+                                <p class="portfolio__description">Drumkit Website is a website which provides user to
+                                    play drum kits on the website with different sounds.
+                                    Project was made using ReactJs- Hooks &Components,
+                                    RestAPIs , Html and Css.
+                                </p>
+                                <a href="https://kunal0007.github.io/DrumGame/"
+                                    class="button button--flex button--small portfolio__button">
+                                    Demo <i class="material-icons button__icon">arrow_forward</i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="./public/images/React_website.JPG" alt="" class="portfolio__img">
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">React Website</h3>
-                            <p class="portfolio__description">A SHOPPING CART containing products menu and feature of
-                                add items to cart.
-                                Project was made using ReactJs- Hooks &Components,
-                                RestAPIs , Html and Css.
-                            </p>
-                            <a href="https://react-shopping-web.herokuapp.com"
-                                class="button button--flex button--small portfolio__button">
-                                Demo <i class="material-icons button__icon">arrow_forward</i>
-                            </a>
-                        </div>
+                    <div class="swiper-button-next">
+                        <i class="material-icons arrow">keyboard_arrow_right</i>
                     </div>
-
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="./public/images/Realtime_Chatapp.JPG" alt="" class="portfolio__img">
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Realtime Chat App</h3>
-                            <p class="portfolio__description">A NODEJS project which provides realtime chat interface
-                                using express-Nodejs and Socket.io.
-                                Project was made using Nodejs, Javascript , Html and Css
-                            </p>
-                            <a href="https://realtime-chat-apt.herokuapp.com"
-                                class="button button--flex button--small portfolio__button">
-                                Demo <i class="material-icons button__icon">arrow_forward</i>
-                            </a>
-                        </div>
+                    <div class="swiper-button-prev">
+                        <i class="material-icons arrow">navigate_before</i>
                     </div>
-
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="./public/images/ReactNative-TodoApp.JPG" alt="" class="portfolio__img"
-                            style="width: fit-content; height: 256px;">
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">React Native TO DO's App </h3>
-                            <p class="portfolio__description">React Native Todo App is a mobile application which
-                                provides user to add, delete, and mark tasks as completed.
-                                Project was made using React Native, Javascript , Html and Css.
-                            </p>
-                            <a href="https://github.com/Kunal0007/React-Native-App-MyTodos"
-                                class="button button--flex button--small portfolio__button">
-                                Demo <i class="material-icons button__icon">arrow_forward</i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="./public/images/Authentication App.JPG" alt="" class="portfolio__img"
-                            style="width: fit-content; height: 256px;">
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Authentication App</h3>
-                            <p class="portfolio__description">Authentication App is a mobile application which
-                                provides user to register, login, and logout.
-                                Project was made using React Native, Javascript , Html and Css.
-                            </p>
-                            <a href="https://github.com/Kunal0007/Authentication-ReactNative"
-                                class="button button--flex button--small portfolio__button">
-                                Demo <i class="material-icons button__icon">arrow_forward</i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="./public/images/DrumKit.JPG" alt="" class="portfolio__img">
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Drumkit Website</h3>
-                            <p class="portfolio__description">Drumkit Website is a website which provides user to
-                                play drum kits on the website with different sounds.
-                                Project was made using ReactJs- Hooks &Components,
-                                RestAPIs , Html and Css.
-                            </p>
-                            <a href="https://kunal0007.github.io/DrumGame/"
-                                class="button button--flex button--small portfolio__button">
-                                Demo <i class="material-icons button__icon">arrow_forward</i>
-                            </a>
-                        </div>
-                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-button-next">
-                    <i class="material-icons arrow">keyboard_arrow_right</i>
-                </div>
-                <div class="swiper-button-prev">
-                    <i class="material-icons arrow">navigate_before</i>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </section>
+            </section>
 
-        <!--==================== PROJECT IN MIND ====================-->
-        <!-- <section class="project section">
+            <!--==================== PROJECT IN MIND ====================-->
+            <!-- <section class="project section">
 
 
             </section> -->
 
-        <!--==================== TESTIMONIAL ====================-->
-        <!-- <section class="testimonial section">
+            <!--==================== TESTIMONIAL ====================-->
+            <!-- <section class="testimonial section">
                 
 
             </section> -->
 
-        <!--==================== CONTACT ME ====================-->
-        <section class="contact section" id="contact">
-            <h2 class="section__title">Contact Me</h2>
-            <span class="section__subtitle">Get In Touch</span>
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contact" data-scroll-section data-scroll-target="#contact">
+                <h2 class="section__title">Contact Me</h2>
+                <span class="section__subtitle">Get In Touch</span>
 
-            <div class="contact__container container grid">
-                <div class="contact__info">
-                    <!-- <div class="contact__information">
+                <div class="contact__container container grid">
+                    <div class="contact__info">
+                        <!-- <div class="contact__information">
                         <i class="material-icons contact__icon">call</i>
 
                         <div>
@@ -719,60 +726,60 @@
                     </div> -->
 
 
-                    <div class="contact__information">
-                        <i class="material-icons contact__icon">email</i>
+                        <div class="contact__information">
+                            <i class="material-icons contact__icon">email</i>
 
-                        <div>
-                            <h3 class="contact__title">Email</h3>
-                            <span class="contact__subtitle">kunal.kv1dr64@gmail.com</span>
+                            <div>
+                                <h3 class="contact__title">Email</h3>
+                                <span class="contact__subtitle">kunal.kv1dr64@gmail.com</span>
+                            </div>
                         </div>
+
+
+                        <div class="contact__information">
+                            <i class="material-icons contact__icon">place</i>
+
+                            <div>
+                                <h3 class="contact__title">Location</h3>
+                                <span class="contact__subtitle">Pune - India</span>
+                            </div>
+                        </div>
+
                     </div>
 
+                    <form action="mailto:kunal.kv1dr64@gmail.com" method="POST" enctype="text/plain"
+                        class="contact__form grid">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Name</label>
+                                <input type="text" class="contact__input">
+                            </div>
 
-                    <div class="contact__information">
-                        <i class="material-icons contact__icon">place</i>
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Email</label>
+                                <input type="email" class="contact__input">
+                            </div>
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Message</label>
+                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        </div>
 
                         <div>
-                            <h3 class="contact__title">Location</h3>
-                            <span class="contact__subtitle">Pune - India</span>
+                            <a href="#" class="button button--flex">
+                                Send Message
+                                <i class="material-icons button__icon">send</i>
+                            </a>
                         </div>
-                    </div>
 
+                    </form>
                 </div>
-
-                <form action="mailto:kunal.kv1dr64@gmail.com" method="POST" enctype="text/plain"
-                    class="contact__form grid">
-                    <div class="contact__inputs grid">
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Name</label>
-                            <input type="text" class="contact__input">
-                        </div>
-
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Email</label>
-                            <input type="email" class="contact__input">
-                        </div>
-                    </div>
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Message</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
-                    </div>
-
-                    <div>
-                        <a href="#" class="button button--flex">
-                            Send Message
-                            <i class="material-icons button__icon">send</i>
-                        </a>
-                    </div>
-
-                </form>
-            </div>
-        </section>
-
+            </section>
+        </div>
     </main>
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer">
+    <footer class="footer" data-scroll-section>
         <div class="footer__bg">
             <div class="footer__container container grid">
                 <div>
@@ -818,6 +825,8 @@
 
 
     <script src="./swiper-bundle.min.js"></script>
+
+    <script src="./locomotive-scroll.min.js"></script>
 
     <script src="./index.js"></script>
 </body>
